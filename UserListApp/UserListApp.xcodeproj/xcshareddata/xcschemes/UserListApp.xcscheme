@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BB672D8E2D46B0AD0042B9BA"
-               BuildableName = "UserListApp.app"
+               BuildableName = "UserList.app"
                BlueprintName = "UserListApp"
                ReferencedContainer = "container:UserListApp.xcodeproj">
             </BuildableReference>
@@ -57,7 +57,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BB672D8E2D46B0AD0042B9BA"
-            BuildableName = "UserListApp.app"
+            BuildableName = "UserList.app"
             BlueprintName = "UserListApp"
             ReferencedContainer = "container:UserListApp.xcodeproj">
          </BuildableReference>
@@ -74,7 +74,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BB672D8E2D46B0AD0042B9BA"
-            BuildableName = "UserListApp.app"
+            BuildableName = "UserList.app"
             BlueprintName = "UserListApp"
             ReferencedContainer = "container:UserListApp.xcodeproj">
          </BuildableReference>
