@@ -10,7 +10,6 @@
 		BB672D932D46B0AD0042B9BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB672D922D46B0AD0042B9BA /* AppDelegate.swift */; };
 		BB672D972D46B0AD0042B9BA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB672D962D46B0AD0042B9BA /* HomeViewController.swift */; };
 		BB672D9C2D46B0AF0042B9BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB672D9B2D46B0AF0042B9BA /* Assets.xcassets */; };
-		BB672DAA2D46B0AF0042B9BA /* UserListAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB672DA92D46B0AF0042B9BA /* UserListAppTests.swift */; };
 		BB672DCD2D46B6120042B9BA /* AppLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB672DCC2D46B6120042B9BA /* AppLoader.swift */; };
 		BB672DD22D46B67C0042B9BA /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB672DD12D46B67C0042B9BA /* HomeViewModel.swift */; };
 		BB672DD52D46B6AB0042B9BA /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB672DD42D46B6AB0042B9BA /* UserRepository.swift */; };
@@ -31,6 +30,9 @@
 		BB672DFD2D46C2A00042B9BA /* UserDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB672DFC2D46C2A00042B9BA /* UserDetailViewModel.swift */; };
 		BB672E002D46C32B0042B9BA /* UserInfoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB672DFF2D46C32B0042B9BA /* UserInfoListView.swift */; };
 		BB672E022D46C34E0042B9BA /* UserInfoListView+Display.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB672E012D46C34E0042B9BA /* UserInfoListView+Display.swift */; };
+		BB672E052D46C93B0042B9BA /* MockUserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB672E042D46C93B0042B9BA /* MockUserRepository.swift */; };
+		BB672E072D46C9C60042B9BA /* UserRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB672E062D46C9C60042B9BA /* UserRepositoryTest.swift */; };
+		BB672E0B2D46D0CB0042B9BA /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB672E0A2D46D0CB0042B9BA /* HomeViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +52,6 @@
 		BB672D9B2D46B0AF0042B9BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB672DA02D46B0AF0042B9BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB672DA52D46B0AF0042B9BA /* UserListAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UserListAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB672DA92D46B0AF0042B9BA /* UserListAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListAppTests.swift; sourceTree = "<group>"; };
 		BB672DCC2D46B6120042B9BA /* AppLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLoader.swift; sourceTree = "<group>"; };
 		BB672DD12D46B67C0042B9BA /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		BB672DD42D46B6AB0042B9BA /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
@@ -72,6 +73,9 @@
 		BB672DFC2D46C2A00042B9BA /* UserDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewModel.swift; sourceTree = "<group>"; };
 		BB672DFF2D46C32B0042B9BA /* UserInfoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoListView.swift; sourceTree = "<group>"; };
 		BB672E012D46C34E0042B9BA /* UserInfoListView+Display.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserInfoListView+Display.swift"; sourceTree = "<group>"; };
+		BB672E042D46C93B0042B9BA /* MockUserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserRepository.swift; sourceTree = "<group>"; };
+		BB672E062D46C9C60042B9BA /* UserRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryTest.swift; sourceTree = "<group>"; };
+		BB672E0A2D46D0CB0042B9BA /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,7 +134,9 @@
 		BB672DA82D46B0AF0042B9BA /* UserListAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				BB672DA92D46B0AF0042B9BA /* UserListAppTests.swift */,
+				BB672E032D46C92D0042B9BA /* Mock */,
+				BB672E062D46C9C60042B9BA /* UserRepositoryTest.swift */,
+				BB672E0A2D46D0CB0042B9BA /* HomeViewModelTests.swift */,
 			);
 			path = UserListAppTests;
 			sourceTree = "<group>";
@@ -342,6 +348,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		BB672E032D46C92D0042B9BA /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				BB672E042D46C93B0042B9BA /* MockUserRepository.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -470,7 +484,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB672DAA2D46B0AF0042B9BA /* UserListAppTests.swift in Sources */,
+				BB672E052D46C93B0042B9BA /* MockUserRepository.swift in Sources */,
+				BB672E072D46C9C60042B9BA /* UserRepositoryTest.swift in Sources */,
+				BB672E0B2D46D0CB0042B9BA /* HomeViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -627,6 +643,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.amor.UserListApp;
+				PRODUCT_MODULE_NAME = UserListApp;
 				PRODUCT_NAME = "$(PRODUCT_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -661,6 +678,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.amor.UserListApp;
+				PRODUCT_MODULE_NAME = UserListApp;
 				PRODUCT_NAME = "$(PRODUCT_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -680,15 +698,20 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FR9Z5KU44J;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.amor.UserListAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UserListApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/UserListApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UserList.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/UserList";
 			};
 			name = Debug;
 		};
@@ -700,15 +723,20 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FR9Z5KU44J;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.amor.UserListAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UserListApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/UserListApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UserList.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/UserList";
 			};
 			name = Release;
 		};
