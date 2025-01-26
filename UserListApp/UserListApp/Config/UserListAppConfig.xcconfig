@@ -1,0 +1,12 @@
+//
+//  UserListAppConfig.xcconfig
+//  UserListApp
+//
+//  Created by Aise Nur Mor on 26.01.2025.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+API_URL = https:/$()/jsonplaceholder.typicode.com/
+PRODUCT_NAME = UserList
