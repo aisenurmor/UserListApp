@@ -8,9 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		BB672D932D46B0AD0042B9BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB672D922D46B0AD0042B9BA /* AppDelegate.swift */; };
-		BB672D972D46B0AD0042B9BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB672D962D46B0AD0042B9BA /* ViewController.swift */; };
+		BB672D972D46B0AD0042B9BA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB672D962D46B0AD0042B9BA /* HomeViewController.swift */; };
 		BB672D9C2D46B0AF0042B9BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB672D9B2D46B0AF0042B9BA /* Assets.xcassets */; };
 		BB672DAA2D46B0AF0042B9BA /* UserListAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB672DA92D46B0AF0042B9BA /* UserListAppTests.swift */; };
+		BB672DCD2D46B6120042B9BA /* AppLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB672DCC2D46B6120042B9BA /* AppLoader.swift */; };
+		BB672DD22D46B67C0042B9BA /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB672DD12D46B67C0042B9BA /* HomeViewModel.swift */; };
+		BB672DD52D46B6AB0042B9BA /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB672DD42D46B6AB0042B9BA /* UserRepository.swift */; };
+		BB672DD72D46B6C70042B9BA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB672DD62D46B6C70042B9BA /* User.swift */; };
+		BB672DDA2D46B6FA0042B9BA /* RemoteUserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB672DD92D46B6FA0042B9BA /* RemoteUserRepository.swift */; };
+		BB672DDC2D46B7510042B9BA /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB672DDB2D46B7510042B9BA /* NetworkManager.swift */; };
+		BB672DDE2D46B7770042B9BA /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB672DDD2D46B7770042B9BA /* Endpoints.swift */; };
+		BB672DE02D46B7940042B9BA /* ApiRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB672DDF2D46B7940042B9BA /* ApiRequestBuilder.swift */; };
+		BB672DE22D46B7E40042B9BA /* BuildConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB672DE12D46B7E40042B9BA /* BuildConfiguration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,13 +33,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BB672D8F2D46B0AD0042B9BA /* UserListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB672D8F2D46B0AD0042B9BA /* UserList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB672D922D46B0AD0042B9BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BB672D962D46B0AD0042B9BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BB672D962D46B0AD0042B9BA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		BB672D9B2D46B0AF0042B9BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB672DA02D46B0AF0042B9BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB672DA52D46B0AF0042B9BA /* UserListAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UserListAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB672DA92D46B0AF0042B9BA /* UserListAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListAppTests.swift; sourceTree = "<group>"; };
+		BB672DCC2D46B6120042B9BA /* AppLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLoader.swift; sourceTree = "<group>"; };
+		BB672DD12D46B67C0042B9BA /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		BB672DD42D46B6AB0042B9BA /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		BB672DD62D46B6C70042B9BA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BB672DD92D46B6FA0042B9BA /* RemoteUserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteUserRepository.swift; sourceTree = "<group>"; };
+		BB672DDB2D46B7510042B9BA /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		BB672DDD2D46B7770042B9BA /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		BB672DDF2D46B7940042B9BA /* ApiRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequestBuilder.swift; sourceTree = "<group>"; };
+		BB672DE12D46B7E40042B9BA /* BuildConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildConfiguration.swift; sourceTree = "<group>"; };
+		BB672DE32D46B81B0042B9BA /* UserListAppConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = UserListAppConfig.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +82,7 @@
 		BB672D902D46B0AD0042B9BA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BB672D8F2D46B0AD0042B9BA /* UserListApp.app */,
+				BB672D8F2D46B0AD0042B9BA /* UserList.app */,
 				BB672DA52D46B0AF0042B9BA /* UserListAppTests.xctest */,
 			);
 			name = Products;
@@ -98,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				BB672D922D46B0AD0042B9BA /* AppDelegate.swift */,
+				BB672DCC2D46B6120042B9BA /* AppLoader.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -112,6 +132,8 @@
 		BB672DC42D46B0F60042B9BA /* Config */ = {
 			isa = PBXGroup;
 			children = (
+				BB672DE12D46B7E40042B9BA /* BuildConfiguration.swift */,
+				BB672DE32D46B81B0042B9BA /* UserListAppConfig.xcconfig */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -119,6 +141,7 @@
 		BB672DC52D46B0FD0042B9BA /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BB672DD62D46B6C70042B9BA /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -126,6 +149,9 @@
 		BB672DC62D46B1030042B9BA /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				BB672DDF2D46B7940042B9BA /* ApiRequestBuilder.swift */,
+				BB672DDD2D46B7770042B9BA /* Endpoints.swift */,
+				BB672DDB2D46B7510042B9BA /* NetworkManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -133,6 +159,7 @@
 		BB672DC72D46B1080042B9BA /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				BB672DD32D46B69C0042B9BA /* UserRepository */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -148,7 +175,7 @@
 		BB672DC92D46B1170042B9BA /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				BB672D962D46B0AD0042B9BA /* ViewController.swift */,
+				BB672DCE2D46B6600042B9BA /* Home */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -168,6 +195,48 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		BB672DCE2D46B6600042B9BA /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BB672DCF2D46B6670042B9BA /* ViewController */,
+				BB672DD02D46B6710042B9BA /* ViewModel */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		BB672DCF2D46B6670042B9BA /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BB672D962D46B0AD0042B9BA /* HomeViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		BB672DD02D46B6710042B9BA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BB672DD12D46B67C0042B9BA /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BB672DD32D46B69C0042B9BA /* UserRepository */ = {
+			isa = PBXGroup;
+			children = (
+				BB672DD42D46B6AB0042B9BA /* UserRepository.swift */,
+				BB672DD82D46B6ED0042B9BA /* Remote */,
+			);
+			path = UserRepository;
+			sourceTree = "<group>";
+		};
+		BB672DD82D46B6ED0042B9BA /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				BB672DD92D46B6FA0042B9BA /* RemoteUserRepository.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -185,7 +254,7 @@
 			);
 			name = UserListApp;
 			productName = UserListApp;
-			productReference = BB672D8F2D46B0AD0042B9BA /* UserListApp.app */;
+			productReference = BB672D8F2D46B0AD0042B9BA /* UserList.app */;
 			productType = "com.apple.product-type.application";
 		};
 		BB672DA42D46B0AF0042B9BA /* UserListAppTests */ = {
@@ -267,8 +336,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB672D972D46B0AD0042B9BA /* ViewController.swift in Sources */,
+				BB672DCD2D46B6120042B9BA /* AppLoader.swift in Sources */,
+				BB672D972D46B0AD0042B9BA /* HomeViewController.swift in Sources */,
+				BB672DDA2D46B6FA0042B9BA /* RemoteUserRepository.swift in Sources */,
+				BB672DD72D46B6C70042B9BA /* User.swift in Sources */,
+				BB672DDC2D46B7510042B9BA /* NetworkManager.swift in Sources */,
 				BB672D932D46B0AD0042B9BA /* AppDelegate.swift in Sources */,
+				BB672DD52D46B6AB0042B9BA /* UserRepository.swift in Sources */,
+				BB672DDE2D46B7770042B9BA /* Endpoints.swift in Sources */,
+				BB672DE02D46B7940042B9BA /* ApiRequestBuilder.swift in Sources */,
+				BB672DE22D46B7E40042B9BA /* BuildConfiguration.swift in Sources */,
+				BB672DD22D46B67C0042B9BA /* HomeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,7 +421,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -400,7 +478,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -412,6 +490,7 @@
 		};
 		BB672DBA2D46B0B00042B9BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB672DE32D46B81B0042B9BA /* UserListAppConfig.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -419,12 +498,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FR9Z5KU44J;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = UserListApp/Info.plist;
+				INFOPLIST_FILE = UserListApp/SupportingFiles/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "$(PRODUCT_NAME)";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -432,7 +511,11 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.amor.UserListApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(PRODUCT_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -441,6 +524,7 @@
 		};
 		BB672DBB2D46B0B00042B9BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB672DE32D46B81B0042B9BA /* UserListAppConfig.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -448,12 +532,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FR9Z5KU44J;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = UserListApp/Info.plist;
+				INFOPLIST_FILE = UserListApp/SupportingFiles/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "$(PRODUCT_NAME)";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -461,7 +545,11 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.amor.UserListApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(PRODUCT_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
