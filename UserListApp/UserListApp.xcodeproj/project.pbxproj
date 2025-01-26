@@ -27,6 +27,10 @@
 		BB672DF12D46BF6E0042B9BA /* UserListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB672DF02D46BF6E0042B9BA /* UserListItemView.swift */; };
 		BB672DF32D46BFD50042B9BA /* UserListItemView+Display.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB672DF22D46BFD50042B9BA /* UserListItemView+Display.swift */; };
 		BB672DF62D46C0330042B9BA /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB672DF52D46C0330042B9BA /* AvatarView.swift */; };
+		BB672DFB2D46C25B0042B9BA /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB672DFA2D46C25B0042B9BA /* UserDetailViewController.swift */; };
+		BB672DFD2D46C2A00042B9BA /* UserDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB672DFC2D46C2A00042B9BA /* UserDetailViewModel.swift */; };
+		BB672E002D46C32B0042B9BA /* UserInfoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB672DFF2D46C32B0042B9BA /* UserInfoListView.swift */; };
+		BB672E022D46C34E0042B9BA /* UserInfoListView+Display.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB672E012D46C34E0042B9BA /* UserInfoListView+Display.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +68,10 @@
 		BB672DF02D46BF6E0042B9BA /* UserListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListItemView.swift; sourceTree = "<group>"; };
 		BB672DF22D46BFD50042B9BA /* UserListItemView+Display.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserListItemView+Display.swift"; sourceTree = "<group>"; };
 		BB672DF52D46C0330042B9BA /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		BB672DFA2D46C25B0042B9BA /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
+		BB672DFC2D46C2A00042B9BA /* UserDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewModel.swift; sourceTree = "<group>"; };
+		BB672DFF2D46C32B0042B9BA /* UserInfoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoListView.swift; sourceTree = "<group>"; };
+		BB672E012D46C34E0042B9BA /* UserInfoListView+Display.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserInfoListView+Display.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				BB672DCE2D46B6600042B9BA /* Home */,
+				BB672DF72D46C23A0042B9BA /* UserDetail */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -298,6 +307,41 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		BB672DF72D46C23A0042B9BA /* UserDetail */ = {
+			isa = PBXGroup;
+			children = (
+				BB672DF82D46C2420042B9BA /* ViewController */,
+				BB672DF92D46C2480042B9BA /* ViewModel */,
+				BB672DFE2D46C2FA0042B9BA /* Views */,
+			);
+			path = UserDetail;
+			sourceTree = "<group>";
+		};
+		BB672DF82D46C2420042B9BA /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BB672DFA2D46C25B0042B9BA /* UserDetailViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		BB672DF92D46C2480042B9BA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BB672DFC2D46C2A00042B9BA /* UserDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BB672DFE2D46C2FA0042B9BA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BB672DFF2D46C32B0042B9BA /* UserInfoListView.swift */,
+				BB672E012D46C34E0042B9BA /* UserInfoListView+Display.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -400,13 +444,17 @@
 				BB672DCD2D46B6120042B9BA /* AppLoader.swift in Sources */,
 				BB672D972D46B0AD0042B9BA /* HomeViewController.swift in Sources */,
 				BB672DDA2D46B6FA0042B9BA /* RemoteUserRepository.swift in Sources */,
+				BB672DFD2D46C2A00042B9BA /* UserDetailViewModel.swift in Sources */,
 				BB672DD72D46B6C70042B9BA /* User.swift in Sources */,
 				BB672DDC2D46B7510042B9BA /* NetworkManager.swift in Sources */,
+				BB672E022D46C34E0042B9BA /* UserInfoListView+Display.swift in Sources */,
 				BB672DF12D46BF6E0042B9BA /* UserListItemView.swift in Sources */,
 				BB672DE72D46BDEF0042B9BA /* UIViewController+Alertable.swift in Sources */,
 				BB672DF62D46C0330042B9BA /* AvatarView.swift in Sources */,
 				BB672DE52D46BDCB0042B9BA /* BaseViewController.swift in Sources */,
+				BB672E002D46C32B0042B9BA /* UserInfoListView.swift in Sources */,
 				BB672D932D46B0AD0042B9BA /* AppDelegate.swift in Sources */,
+				BB672DFB2D46C25B0042B9BA /* UserDetailViewController.swift in Sources */,
 				BB672DD52D46B6AB0042B9BA /* UserRepository.swift in Sources */,
 				BB672DDE2D46B7770042B9BA /* Endpoints.swift in Sources */,
 				BB672DF32D46BFD50042B9BA /* UserListItemView+Display.swift in Sources */,

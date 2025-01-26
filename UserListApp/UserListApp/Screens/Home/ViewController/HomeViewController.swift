@@ -56,6 +56,7 @@ private extension HomeViewController {
         
         tableView.registerReusableCell(UserListTableViewCell.self)
         tableView.dataSource = self
+        tableView.delegate = self
     }
     
     func bindViewModel() {
@@ -88,5 +89,15 @@ extension HomeViewController: UITableViewDataSource {
         let user = viewModel.user(at: indexPath.row)
         cell.configure(with: user)
         return cell
+    }
+}
+
+// MARK: - UITableViewDelegate
+extension HomeViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let user = viewModel.user(at: indexPath.row)
+        let detailVC = UserDetailViewController(.init(with: user))
+        navigationController?.pushViewController(detailVC, animated: true)
     }
 }
